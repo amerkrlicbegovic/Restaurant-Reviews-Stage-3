@@ -21,7 +21,7 @@
           "Sunday": "12:00 pm - 4:00 pm, 5:30 pm - 11:00 pm"
         },
         "createdAt": 1504095563444,
-        "updatedAt": "2017-09-14T14:01:27.653Z",
+        "updatedAt": "2018-05-02T21:09:09.209Z",
         "id": 1,
         "is_favorite": false
       },
@@ -69,8 +69,9 @@
           "Sunday": "11:30 am - 2:00 am"
         },
         "createdAt": 1504095571434,
-        "updatedAt": 1504095571434,
-        "id": 3
+        "updatedAt": "2018-04-08T09:05:15.014Z",
+        "id": 3,
+        "is_favorite": true
       },
       {
         "name": "Katz's Delicatessen",
@@ -212,7 +213,7 @@
           "Sunday": "5:00 pm - 10:00 pm"
         },
         "createdAt": 1504095567191,
-        "updatedAt": 1504095567191,
+        "updatedAt": "2018-05-29T21:37:52.308Z",
         "is_favorite": false,
         "id": 9
       },
@@ -510,6 +511,24 @@
         "updatedAt": 1504095567183,
         "rating": 4,
         "comments": "For a Michelin star restaurant, it's fairly priced and the food is fairly good. Started with a strawberry margarita which was good in flavor but not much alcohol. Had the chicken enchiladas with salsa verde and it was really good. Great balance in flavor and a good portion. Extra tasty with their hot sauces. My wife had the lamb but it was a bit too salty for our taste. Although, it was cooked very well and fell off the bone. The highlight of the night was the tres leches cake. Probably the best I've ever had to be honest. Not too sweet and very milky. Overall, one of my top 3 favorite Mexican in NY."
+      },
+      {
+        "restaurant_id": "1",
+        "name": "Amer",
+        "rating": "5",
+        "comments": "I was VERY excited to come here after seeing and hearing so many good things about this place. ",
+        "createdAt": "2018-05-29T13:15:31.390Z",
+        "updatedAt": "2018-05-29T13:15:31.390Z",
+        "id": 40
+      },
+      {
+        "restaurant_id": "1",
+        "name": "Sanjin",
+        "rating": "4",
+        "comments": "This place is a blast. Must orders: GREEN TEA NOODS, sounds gross (to me at least) but these were incredible!, Kung pao pastrami (but you already knew that), beef tartare was a fun appetizer that we decided to try, the spicy ma po tofu SUPER spicy but delicous, egg rolls and scallion pancake i could have passed on... I wish we would have gone with a larger group, so much more I would have liked to try!",
+        "createdAt": "2018-05-29T13:42:12.637Z",
+        "updatedAt": "2018-05-29T13:42:12.637Z",
+        "id": 41
       }
     ]
   },
@@ -562,10 +581,10 @@
       "id": 10
     },
     "restaurants": {
-      "id": 10
+      "id": 11
     },
     "reviews": {
-      "id": 30
+      "id": 41
     }
   }
 }

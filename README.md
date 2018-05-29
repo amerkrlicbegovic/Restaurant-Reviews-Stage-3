@@ -1,145 +1,29 @@
-# Local Development API Server
-## Usage
-#### Get Restaurants
+![Logo](https://raw.githubusercontent.com/amerkrlicbegovic/Udacity-Restaurant-reviews/master/img/logo.png)
+
+# Mobile Web Specialist Certification Course
+---
+
+For the Restaurant Reviews project, I convert a static webpage to a mobile-ready web application. I am take a static design that lacks accessibility and I convert the design to be responsive on different sized displays and accessible for screen reader use. I also add a service worker to begin the process of creating a seamless offline experience for your users. The webiste retrieves data about restaurants from a server. The restaurants' data contain rating information about restaurants. The data main structure and images of the website is persisted in cache using a service worker and the restaurant information/list is stored in indexedDB to achieve a good Offline first experience. Furthermore, the design is responsive, to adjust properly in most/all screen displays. And finally, optimizations have been done based on results from lighthouse to ensure high score of accessibility, Optimization and Progressive Web App.
+
+### Prerequisites
+
+You need to have installed node.js server to run the app.
+
 ```
-curl "http://localhost:1337/restaurants"
-```
-#### Get Restaurants by id
-````
-curl "http://localhost:1337/restaurants/{3}"
-````
-
-## Architecture
-Local server
-- Node.js
-- Sails.js
-
-## Contributors
-
-- [Brandy Lee Camacho - Technical Project Manager](mailto:brandy.camacho@udacity.com)
-- [David Harris - Web Services Lead](mailto:david.harris@udacity.com)
-- [Omar Albeik - Frontend engineer](mailto:omaralbeik@gmail.com)
-
-## Getting Started
-
-### Development local API Server
-_Location of server = /server_
-Server depends on [node.js LTS Version: v6.11.2 ](https://nodejs.org/en/download/), [npm](https://www.npmjs.com/get-npm), and [sails.js](http://sailsjs.com/)
-Please make sure you have these installed before proceeding forward.
-
-Great, you are ready to proceed forward; awesome!
-
-Let's start with running commands in your terminal, known as command line interface (CLI)
-
-###### Install project dependancies
-```Install project dependancies
-# npm i
-```
-###### Install Sails.js globally
-```Install sails global
-# npm i sails -g
-```
-###### Start the server
-```Start server
-# node server
-```
-### You should now have access to your API server environment
-debug: Environment : development
-debug: Port        : 1337
-
-
-## Endpoints
-
-### GET Endpoints
-
-#### Get all restaurants
-```
-http://localhost:1337/restaurants/
+https://nodejs.org/en/download/
 ```
 
-#### Get favorite restaurants
-```
-http://localhost:1337/restaurants/?is_favorite=true
-```
+### Installing and running the app
 
-#### Get a restaurant by id
-```
-http://localhost:1337/restaurants/<restaurant_id>
-```
-
-#### Get all reviews for a restaurant
-```
-http://localhost:1337/reviews/?restaurant_id=<restaurant_id>
-```
-
-#### Get all restaurant reviews
-```
-http://localhost:1337/reviews/
-```
-
-#### Get a restaurant review by id
-```
-http://localhost:1337/reviews/<review_id>
-```
-
-#### Get all reviews for a restaurant
-```
-http://localhost:1337/reviews/?restaurant_id=<restaurant_id>
-```
+1. open project directory on terminal
+2. install node modules by run this npm i
+3. install sails global by run this sudo npm i sails -g
+4. Node.js has some simple tools to do this, and you don't even need to know Node just run `http-server`.
+5. open another terminal on the same directory of project then go to the server folder and run `npm start` in the cmd for the api server to run.
+6.  With your server running, visit the site: `http://localhost:8080`, and look around for a bit to see what the current experience looks like.
 
 
-### POST Endpoints
+## Acknowledgments
 
-#### Create a new restaurant review
-```
-http://localhost:1337/reviews/
-```
+* Udacity and all the mentors
 
-###### Parameters
-```
-{
-    "restaurant_id": <restaurant_id>,
-    "name": <reviewer_name>,
-    "rating": <rating>,
-    "comments": <comment_text>
-}
-```
-
-
-### PUT Endpoints
-
-#### Favorite a restaurant
-```
-http://localhost:1337/restaurants/<restaurant_id>/?is_favorite=true
-```
-
-#### Unfavorite a restaurant
-```
-http://localhost:1337/restaurants/<restaurant_id>/?is_favorite=false
-```
-
-#### Update a restaurant review
-```
-http://localhost:1337/reviews/<review_id>
-```
-
-###### Parameters
-```
-{
-    "name": <reviewer_name>,
-    "rating": <rating>,
-    "comments": <comment_text>
-}
-```
-
-
-### DELETE Endpoints
-
-#### Delete a restaurant review
-```
-http://localhost:1337/reviews/<review_id>
-```
-
-
-If you find a bug in the source code or a mistake in the documentation, you can help us by
-submitting an issue to our [Waffle Dashboard](https://waffle.io/udacity/mwnd-issues). Even better you can submit a Pull Request with a fix :)

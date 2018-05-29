@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="preload" href="css/styles.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="css/styles_767.css" as="style" media="(max-width: 767px)" onload="this.rel='stylesheet'">
+  <link rel="preload" href="css/styles_768.css" as="style" media="(min-width: 768px)" onload="this.rel='stylesheet'">
+  <link rel="preload" href="css/styles_992.css" as="style" media="(min-width: 992px)" onload="this.rel='stylesheet'">
+  <meta content="The best place to get your Restaurant Reviews" name="description">
+  <link href="/img/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="/img/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+  <link href="/img/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+  <link href="/site.webmanifest" rel="manifest">
+  <meta content="#da532c" name="msapplication-TileColor">
+  <meta content="#252831" name="theme-color">
+  <title>Restaurant Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+</head>
+<body>
+  <header>
+    <nav id="nav1">
+      <h1>Restaurant Reviews</h1>
+    </nav>
+  </header>
+  <main role="main" id="maincontent">
+      <div class="map-toggle">
+          <a href="" id="toggle-map" onclick="myFunction()">Show map</a>
+      </div>
+    <section id="map-container" aria-label="Search results map" role="application" style="display:none">
+      <div role="application" id="map"></div>
+    </section>
+    <section>
+      <div class="filter-options">
+        <h2 tabindex="0">Filter Results</h2>
+        <select aria-label="neighborhoods" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+          <option value="all">All Neighborhoods</option>
+        </select>
+        <select aria-label="cuisines" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+          <option value="all">All Cuisines</option>
+        </select>
+      </div>
+      <ul id="restaurants-list"></ul>
+      <div class="clearfix"></div>
+    </section>
+  </main>
+  <footer id="footer">
+    Copyright (c) 2018 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+  </footer>
+
+  <script>
+      function myFunction() {
+        event.preventDefault();
+        document.getElementById("map-container").style.display = "block";
+      }
+      </script>
+
+  <script type="text/javascript" src="sw.js"></script>
+  <script async type="application/javascript" charset="utf-8" src="node_modules/idb/lib/idb.js"></script>
+  <script async type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+  <script async type="application/javascript" charset="utf-8" src="lazyload.js"></script>
+  <script async type="application/javascript" charset="utf-8" src="js/main.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGCG4LLAepqds1dL9mgOPFWkq7l46iUJc&libraries=places&callback=initMap"></script>
+</body>
+</html>
