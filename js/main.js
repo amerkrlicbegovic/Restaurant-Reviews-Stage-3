@@ -5,6 +5,14 @@ var map
 var markers = []
 
 /**
+ * display map.
+ */
+function myFunction() {
+  event.preventDefault();
+  document.getElementById("map-container").style.display = "block";
+}
+
+/**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
