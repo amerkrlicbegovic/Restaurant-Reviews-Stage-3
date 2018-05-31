@@ -19,7 +19,7 @@ https://nodejs.org/en/download/
 2. install node modules by run this npm i
 3. install sails global by run this sudo npm i sails -g
 4. Node.js has some simple tools to do this, and you don't even need to know Node just run `http-server`.
-5. open another terminal on the same directory of project then go to the server folder and run `npm start` in the cmd for the api server to run.
+5. open another terminal on the same directory of project and run `npm start` in the cmd for the api server to run.
 6.  With your server running, visit the site: `http://localhost:8080`, and look around for a bit to see what the current experience looks like.
 
 
