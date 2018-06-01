@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Tricks -->
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <link rel="preload" href="css/styles.css" as="style" onload="this.rel='stylesheet'">
   <link rel="preload" href="css/styles_767.css" as="style" media="(max-width: 767px)" onload="this.rel='stylesheet'">
@@ -82,6 +83,19 @@
   <footer id="footer">
     Copyright (c) 2018 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
+
+  <!-- Prevent Google Fonts: Roboto -->
+  <script>
+			// Thanks to: https://stackoverflow.com/questions/25523806/google-maps-v3-prevent-api-from-loading-roboto-font/25902239
+			var head = document.getElementsByTagName( 'head' )[ 0 ]
+				, insertBefore = head.insertBefore
+			;
+			head.insertBefore = function( newElement, referenceElement ) {
+				if( newElement.href && ~ newElement.href.indexOf( '//fonts.googleapis.com/css?family=Roboto' ) )
+					return;
+				insertBefore.call( head, newElement, referenceElement );
+			};
+		</script>
   <script type="application/javascript" charset="utf-8" src="node_modules/idb/lib/idb.js"></script>
   <script type="application/javascript" src="js/dbhelper.js"></script>
   <script type="text/javascript" src="js/restaurant_info.js"></script>
