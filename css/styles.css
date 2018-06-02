@@ -107,10 +107,11 @@ nav {
 }
 .filter-options h2 {
 	color: white;
-	font-size: 120%;
+	font-size: 150%;
   	line-height: 1;
-  	margin: 10px 20px 30px 20px;
-  	padding-right: 20px;
+  	margin: 10px 20px 30px 10px;
+		padding-right: 20px;
+		padding-top: 20px;
 }
 .filter-options select{
 	background-color: white;
@@ -131,7 +132,6 @@ nav {
 	}
 	.filter-options h2 {
 		font-size: 1.5rem;
-		padding: 10px 0 0 0;
 		margin: 0px;
 	}
 	.filter-options select {
