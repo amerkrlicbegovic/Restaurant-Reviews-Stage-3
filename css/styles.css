@@ -101,14 +101,13 @@ nav {
 
 .filter-options {
 	width: 100%;
-	height: 50px;
+	height: 150px;
 	background-color: #252831;
 	align-items: center;
 }
 .filter-options h2 {
 	color: white;
 	font-size: 120%;
-  	font-weight: normal;
   	line-height: 1;
   	margin: 10px 20px 30px 20px;
   	padding-right: 20px;
@@ -128,7 +127,6 @@ nav {
 
 @media (max-width: 480px) {
 	.filter-options {
-		height: 150px;
 		text-align: center;
 	}
 	.filter-options h2 {
@@ -137,7 +135,7 @@ nav {
 		margin: 0px;
 	}
 	.filter-options select {
-		font-size: 13pt;
+		font-size: 13px;
 		height: 35px;
 		margin: 10px;
 		padding: 0 10px;
@@ -245,13 +243,13 @@ nav {
 		margin: 15px auto;
 	}
 	#restaurants-list li h1 {
-		font-size: 16pt;
+		font-size: 16px;
 	}
 	#restaurants-list p {
-		font-size: 14pt;
+		font-size: 14px;
 	}
 	#restaurants-list li a {
-		font-size: 14pt;
+		font-size: 14px;
 	}
 }
 @media (min-width: 792px) and (max-width: 1199px) {
@@ -263,13 +261,13 @@ nav {
 		margin-left: calc((100% - 660px)/2);
 	}
 	#restaurants-list li h1 {
-		font-size: 16pt;
+		font-size: 16px;
 	}
 	#restaurants-list p {
-		font-size: 14pt;
+		font-size: 14px;
 	}
 	#restaurants-list li a {
-		font-size: 14pt;
+		font-size: 14px;
 	}
 }
 @media (min-width: 1200px) {
@@ -280,13 +278,13 @@ nav {
 		margin-left: calc((100% - 990px)/2);
 	}
 	#restaurants-list li h1 {
-		font-size: 16pt;
+		font-size: 16px;
 	}
 	#restaurants-list p {
-		font-size: 14pt;
+		font-size: 14px;
 	}
 	#restaurants-list li a {
-		font-size: 14pt;
+		font-size: 14px;
 	}
 }
 
@@ -353,7 +351,7 @@ nav {
 #restaurant-name {
 	color: #252831;
 	font-family: Arial, sans-serif;
-	font-size: 20pt;
+	font-size: 20px;
 	font-weight: 200;
 	letter-spacing: 0;
 	margin: 30px 0 30px;
@@ -366,13 +364,13 @@ nav {
 	margin-right: auto;
 }
 #restaurant-address {
-	font-size: 12pt;
+	font-size: 12px;
 	margin: 10px 0px;
 }
 #restaurant-cuisine {
 	background-color: #333;
 	color: #ddd;
-	font-size: 12pt;
+	font-size: 12px;
 	font-weight: 300;
 	letter-spacing: 10px;
 	margin: 0 auto 20px auto;
@@ -392,10 +390,10 @@ nav {
 }
 #reviews-container h2 {
 	color: #f58500;
-	font-size: 24pt;
+	font-size: 24px;
 	font-weight: 300;
 	letter-spacing: -1px;
-	padding-bottom: 1pt;
+	padding-bottom: 1px;
 }
 h3{
 text-align:center;
@@ -478,19 +476,19 @@ font-size:200%;
 		margin: 15px 0;
 	}
 	#restaurant-cuisine {
-		font-size: 14pt;
+		font-size: 14px;
 	}
 	#restaurant-address {
-		font-size: 14pt;
+		font-size: 14px;
 	}
 	#restaurant-hours td {
-		font-size: 12pt;
+		font-size: 12px;
 	}
 	#reviews-container h2 {
 		text-align: center;
 	}
 	#reviews-list li p {
-		font-size: 14pt;
+		font-size: 14px;
   }
 
 }

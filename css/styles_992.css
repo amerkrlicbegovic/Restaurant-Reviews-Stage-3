@@ -21,19 +21,19 @@
     padding: 15px .5%;
   }
   #restaurant-cuisine, #restaurant-address {
-    font-size: 14pt;
+    font-size: 14px;
   }
   #restaurant-hours td {
-    font-size: 12pt;
+    font-size: 12px;
   }
   #reviews-list li p {
-    font-size: 14pt;
+    font-size: 14px;
   }
   nav h1 {
     padding: 20px 0;
   }
   nav h1 a {
-    font-size: 23pt;
+    font-size: 23px;
     letter-spacing: 12px;
   }
 
